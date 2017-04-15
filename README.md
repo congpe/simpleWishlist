@@ -1,1 +1,1 @@
-# simpleWishlist
+http://localhost:7000/
