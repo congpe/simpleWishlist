@@ -35,7 +35,7 @@ module.exports = function(app) {
     // delete
     app.delete('/api/wishs/:wish_id', function(req, res) {
         Wish.remove({
-            _id : req.params.todo_id
+            _id : req.params.wish_id
         }, function(err, wish) {
             if (err)
                 res.send(err);
