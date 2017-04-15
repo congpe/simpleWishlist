@@ -35,7 +35,7 @@
     <div id="wish-list" class="row">
         <div class="col-sm-4 col-sm-offset-4">
 
-            <!-- LOOP OVER THE TODOS IN $scope.todos -->
+            <!-- LOOP OVER IN $scope.wishs -->
             <div class="checkbox" ng-repeat="wish in wishs">
                 <label>
                     <input type="checkbox" ng-click="deleteWish(wish._id)"> {{ wish.text }}
@@ -55,7 +55,7 @@
                     <input type="text" class="form-control input-lg text-center" placeholder="things I wish to have" ng-model="formData.text">
                 </div>
 
-                <!-- createWish() WILL CREATE NEW TODOS -->
+                <!-- createWish() WILL CREATE NEW wishs -->
                 <button type="submit" class="btn btn-primary btn-lg" ng-click="createWish()">Add</button>
             </form>
         </div>
